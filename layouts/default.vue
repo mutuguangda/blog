@@ -1,12 +1,14 @@
 <template>
   <div class="w-[65ch] lt-md:w-full mx-auto">
-    <div flex justify-between items-center py-4 border-b border-b-solid border-b-black>
+    <div flex justify-between items-center p-4 border-b border-b-solid border-b-black>
       <img src="" alt="logo">
-      <nav class="flex gap-2">
-        <a href="">Blog</a>
-        <a href="">Map</a>
+      <nav flex gap-1>
+        <ButtonLink>Blog</ButtonLink>
+        <ButtonLink>Map</ButtonLink>
       </nav>
     </div>
-    <slot />
+    <main p-5>
+      <slot />
+    </main>
   </div>
 </template>

@@ -3,7 +3,7 @@ import { defineConfig, presetAttributify, presetIcons, presetUno, presetWebFonts
 export default defineConfig({
   theme: {
     colors: {
-      default: '#F1EFE7',
+      background: 'var(--background)',
       primary: 'var(--primary)',
     },
   },

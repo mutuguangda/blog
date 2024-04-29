@@ -3,7 +3,7 @@ import './design/global.css'
 </script>
 
 <template>
-  <NuxtLayout>
+  <NuxtLayout font-serif>
     <NuxtPage />
   </NuxtLayout>
 </template>
