@@ -1,5 +1,5 @@
 :root {
-  --text: #333;
+  --foreground: #333;
   --background: #F1EFE7;
   --primary: #800000;
 }
@@ -7,5 +7,16 @@
 body {
   margin: 0;
   background: var(--background);
-  color: var(--text)
+  color: var(--foreground)
+}
+
+main a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid rgba(125,125,125,.3);
+  transition: border .3s ease-in-out;
+}
+
+main a:hover {
+  border-bottom: 1px solid var(--foreground);
 }

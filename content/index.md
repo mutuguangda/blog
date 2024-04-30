@@ -1,14 +1,18 @@
 ---
-title: 'Title of the page'
-description: 'meta description of the page'
+title: King Judd
+description: King Judd 's Portfolio
 ---
 
-# Nuxt Content
+# King Judd
 
-This page corresponds to the `/` route of your website. You can delete it or create another file in the `content/` directory.
-
-Try to navigate to [/about](/about). These 2 pages are rendered by the `pages/[...slug].vue` component.
+Hi 👋, I am King Judd, a front-end developer.I will share my technical insights as well as my reflections on life through my personal blog.
 
 ---
 
-Look at the [Content documentation](https://content.nuxtjs.org/) to learn more.
+You can find me on:
+
+1. [Github](https://github.com/mutuguangda)
+2. [Twitter](https://twitter.com/mutuguangda)
+
+Or contact me via email mutuguangda@gmail.com
+

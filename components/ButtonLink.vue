@@ -1,11 +1,30 @@
+<script setup lang="ts">
+import type { RouteRecordRaw } from '#vue-router';
+import { isURL } from 'validator'
+
+const props = defineProps<{
+  to: RouteRecordRaw | string
+}>()
+
+const isExternalLink = computed(() => {
+  if (typeof props.to !== 'string') return false
+  return isURL(props.to)
+})
+</script>
+
 <template>
-  <!-- @vue-ignore -->
-  <RouterLink v-bind="$attrs" class="btn-link">
+  <a v-if="isExternalLink" v-bind="$attrs" class="btn-link is-external" :href="(props.to as unknown as string)" target="_blank">
+    <span>
+      <slot></slot>
+    </span>
+    <span i-heroicons-arrow-up-right transform translate-y-2px></span>
+  </a>
+  <RouterLink v-else v-bind="$attrs" class="btn-link" :to="props.to">
     <slot />
   </RouterLink>
 </template>
 
-<style>
+<style scoped>
 .btn-link {
   color: var(--text);
   position: relative;
@@ -13,6 +32,12 @@
   text-decoration: none;
   transition: color 0.3s;
   padding: 0.25rem 0.5rem;
+}
+
+.btn-link.is-external {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .btn-link::after {
@@ -28,10 +53,10 @@
 }
 
 .btn-link:hover::after {
-  width: 100%; /* 下划线宽度 */
+  width: 100%;
 }
 
 .btn-link:hover {
-  color: var(--primary); /* 鼠标悬停时文本颜色 */
+  color: var(--primary);
 }
 </style>
