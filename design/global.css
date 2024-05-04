@@ -1,7 +1,17 @@
 :root {
   --foreground: #333;
+  --foreground-2: #a1a1a1;
   --background: #F1EFE7;
   --primary: #800000;
+}
+
+* {
+  scrollbar-color: var(--foreground-2) var(--background);
+}
+
+*::selection {
+  background: var(--primary);
+  color: #fff;
 }
 
 body {
@@ -18,5 +28,17 @@ main a {
 }
 
 main a:hover {
-  border-bottom: 1px solid var(--foreground);
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
+
+main pre {
+  border: 1px solid var(--foreground);
+  padding: 1em;
+  overflow-x: auto;
+}
+
+pre, code  {
+  font-feature-settings: normal;
+  font-variation-settings: normal;
 }
