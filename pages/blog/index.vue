@@ -1,6 +1,14 @@
 <script setup lang="ts">
+import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 import dayjs from 'dayjs';
 
+const query: QueryBuilderParams = {
+  path: '/blog', where: [{
+    date: {
+      $type: 'string'
+    }
+  }], sort: [{ date: -1 }]
+}
 const years = ref<Record<string, true>>({})
 
 function formatToDate(s: string) {
@@ -23,7 +31,7 @@ function isH2(post: Record<string, any>) {
 
 <template>
   <h1>Blog</h1>
-  <ContentList path="/blog" v-slot="{ list }">
+  <ContentList :query="query" v-slot="{ list }">
     <div v-for="post in list" :key="post._path">
       <h2 v-if="isH2(post)">{{ getYear(post.date) }}</h2>
       <RouterLink :to="post._path">{{ post.title }} · {{ formatToDate(post.date) }}</RouterLink>
