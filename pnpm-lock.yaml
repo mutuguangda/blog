@@ -31,15 +31,15 @@ devDependencies:
   dotenv:
     specifier: ^16.4.5
     version: 16.4.5
-  esno:
-    specifier: ^4.7.0
-    version: 4.7.0
   gray-matter:
     specifier: ^4.0.3
     version: 4.0.3
   notion-to-md:
     specifier: ^3.1.1
     version: 3.1.1
+  tsx:
+    specifier: ^4.9.1
+    version: 4.9.1
 
 packages:
 
@@ -3738,13 +3738,6 @@ packages:
       esrecurse: 4.3.0
       estraverse: 4.3.0
     dev: false
-
-  /esno@4.7.0:
-    resolution: {integrity: sha512-81owrjxIxOwqcABt20U09Wn8lpBo9K6ttqbGvQcB3VYNLJyaV1fvKkDtpZd3Rj5BX3WXiGiJCjUevKQGNICzJg==}
-    hasBin: true
-    dependencies:
-      tsx: 4.9.0
-    dev: true
 
   /esprima@4.0.1:
     resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
@@ -7485,8 +7478,8 @@ packages:
     resolution: {integrity: sha512-tmMpK00BjZiUyVyvrBK7knerNgmgvcV/KLVyuma/SC+TQN167GrMRciANTz09+k3zW8L8t60jWO1GpfkZdjTaw==}
     dev: false
 
-  /tsx@4.9.0:
-    resolution: {integrity: sha512-UY0UUhDPL6MkqkZU4xTEjEBOLfV+RIt4xeeJ1qwK73xai4/zveG+X6+tieILa7rjtegUW2LE4p7fw7gAoLuytA==}
+  /tsx@4.9.1:
+    resolution: {integrity: sha512-CqSJaYyZ6GEqnGtPuMPQHvUwRGU6VHSVF+RDxoOmRg/XD4aF0pD973tKhoUYGQtdcoCHcSOGk34ioFaP+vYcMQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dependencies:
