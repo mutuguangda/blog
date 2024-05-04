@@ -42,3 +42,28 @@ pre, code  {
   font-feature-settings: normal;
   font-variation-settings: normal;
 }
+
+h1 {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+h2 a, h2 a:hover,
+h3 a, h3 a:hover,
+h4 a, h4 a:hover {
+  border-bottom: none;
+}
