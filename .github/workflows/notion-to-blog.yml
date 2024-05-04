@@ -1,8 +1,9 @@
 name: Convert Notion to Blog
 
-on:
-  schedule:
-    - cron: '0 0 * * *'
+# on:
+#   schedule:
+#     - cron: '0 0 * * *'
+on: [push]
 
 jobs:
   convert:
@@ -16,7 +17,10 @@ jobs:
         run: pnpm install
 
       - name: Convert Notion to Blog
-        uses: pnpm run notion-to-blog
+        env:
+          NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
+          NOTION_BLOG_PAGE: ${{ secrets.NOTION_BLOG_PAGE }}
+        run: pnpm run notion-to-blog
 
       - name: Commit and push changes
         run: |
