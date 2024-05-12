@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import type { RouteRecordRaw } from '#vue-router';
-import { isURL } from 'validator'
+import isURL from 'validator/es/lib/isURL'
+
+defineOptions({
+  inheritAttrs: false,
+})
 
 const props = defineProps<{
   to: RouteRecordRaw | string
