@@ -1,8 +1,10 @@
 name: Convert Notion to Blog
 
+# on:
+#   schedule:
+#     - cron: '0 0 * * *'
 on:
-  schedule:
-    - cron: '0 0 * * *'
+  [push]
 
 jobs:
   main:
@@ -50,5 +52,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "feat: sync notion to blog"
-          git push
+          git commit -m "feat: sync notion to blog" || echo "nothing to commit"
+          git push || echo "nothing to push"
