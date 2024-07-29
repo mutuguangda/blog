@@ -18,7 +18,7 @@ export default defineConfig({
     presetWebFonts({
       fonts: {
         sans: 'Inter:400,600,800',
-        serif: 'Noto Serif SC:400,600,800',
+        serif: 'Noto Serif SC:500,700,900',
         mono: 'Monaspace Neon:400,600',
       },
     }),
