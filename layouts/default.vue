@@ -6,7 +6,7 @@
       </RouterLink>
       <nav flex gap-2>
         <ButtonLink to="/blog">Blog</ButtonLink>
-        <ButtonLink to="https://mm-khaki-two.vercel.app/preview">Map</ButtonLink>
+        <ButtonLink to="https://map.mutuguangda.site/preview">Map</ButtonLink>
       </nav>
     </div>
     <main p-5>
