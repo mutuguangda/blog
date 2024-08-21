@@ -1,42 +1,6 @@
-# Content v2 Minimal Starter
+# mutuguangda.site
 
-Look at the [Content documentation](https://content.nuxt.com/) to learn more.
+The content of the article comes from two places:
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. one is a technical article written in the project
+2. the other is an article about life synchronized from Notion
